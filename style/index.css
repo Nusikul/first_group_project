@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    max-width: 1025px;
+    margin: 0 auto;
+    
+}
+.header {
+    
+}
+.logo {
+    width: 190px;
+    height: 51.83px;
+    margin-top: 21px;
+    margin-left: 76px;
+}
+.header__nav {
+    
+}
+.header__menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+
+    
+}
+.header__menu-item {
+    text-decoration: none;
+    color: grey;
+    padding: 0px 10px 0px 0px;
+}
