@@ -8,7 +8,7 @@
   flex-direction: row;
   align-items: center;
   background-color: #ffffff;
-  height: 100px;
+  height: 100%;
 }
 .logo {
   width: 190px;
@@ -18,7 +18,7 @@
 .header__nav {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   text-align: center;
   column-gap: 39px;
@@ -48,6 +48,67 @@
   color: #6f7682;
   padding: 0 12px; 
 }
+.header__content-catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.header__dropdown {
+  width: 31px;
+  height: 31px;
+  left: 75px;
+  margin-top: 222px;
+  margin-left: -1305px;
+}
+.header__menu {
+  margin-top: 222px;
+  margin-left: 35px;
+}
+.header__menu-link {
+  font-family: "PT Sans", sans-serif, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  text-decoration: none;
+  color: #4798DE;
+}
+.header__search-form {
+  border: 1px solid #979595;
+  display: inline-flex;
+  height: 50px;
+  margin-top: 222px;
+  margin-left: 50px;
+  padding: 0 0 0 30px;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.header__search-form-txt {  
+  font-family: "PT Sans", sans-serif, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  width: 439px;
+  outline: none;
+  
+}
+.header__search-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  width: 84px;
+  height: 50px;
+  margin: 0 0 0 10px;
+  background: #4798DE;
+}
+
 .footer {
   width: 100vw;
   font-family: "PT Sans", sans-serif, serif;
