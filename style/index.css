@@ -192,51 +192,99 @@
 .main-conteiner {
   display: grid;
   grid-template-areas: "product-1st product-2nd product-3rd product-4th";
-  grid-template-columns: repeat(1fr);
   border: 1px solid red;
-  margin-top: 2%;
-  margin-bottom: 3%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+
+.main-conteiner__product-1st,
+.main-conteiner__product-2nd,
+.main-conteiner__product-3rd,
+.main-conteiner__product-4th {
+
+  border: 1px solid red;
+}
+
+.main-conteiner__product-1st:hover,
+.main-conteiner__product-2nd:hover,
+.main-conteiner__product-3rd:hover,
+.main-conteiner__product-4th:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  border: 1px solid red;
 
 }
 
 .main-conteiner__product-1st {
   grid-area: product-1st;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-  width: 23%;
-  height: 100%;
 }
 
 .main-conteiner__product-2nd {
   grid-area: product-2nd;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-  width: 23%;
-  height: 100%;
+
 }
 
 .main-conteiner__product-3rd {
   grid-area: product-3rd;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-  width: 23%;
-  height: 100%;
+
 }
 
 .main-conteiner__product-4th {
   grid-area: product-4th;
+
+}
+
+.main-conteiner__product-1st_img,
+.main-conteiner__product-2nd_img,
+.main-conteiner__product-4th_img {
   display: flex;
-  flex-direction: column;
+  height: 50%;
+  flex-direction: row;
+  justify-content: center;
   border: 1px solid red;
-  width: 23%;
-  height: 100%;
+}
+
+.main-conteiner__product-3rd_img {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid red;
+  height: 50%;
+
 }
 
 
+.main-conteiner__product-1st_info,
+.main-conteiner__product-2nd_info,
+.main-conteiner__product-3rd_info,
+.main-conteiner__product-4th_info {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  height: 40%;
+
+}
+
+.main-conteiner__product-4th_form,
+.main-conteiner__product-3rd_form,
+.main-conteiner__product-2nd_form,
+.main-conteiner__product-1st_form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  height: 10%;
+  opacity: 0;
+}
+
+.main-conteiner__product-1st_form:hover,
+.main-conteiner__product-4th_form:hover,
+.main-conteiner__product-3rd_form:hover,
+.main-conteiner__product-2nd_form:hover {
+  opacity: 1;
+}
 
 .footer {
   width: 100%;
@@ -388,6 +436,11 @@
   padding: 0px;
   width: 70%;
   height: 40px;
+}
+
+.footer__content-subscription_input:hover,
+.footer__content-subscription_button:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 .footer__content-subscription_button {
