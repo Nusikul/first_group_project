@@ -3,6 +3,7 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .header__container {
   display: flex;
   flex-direction: row;
@@ -11,11 +12,13 @@
   background-color: #ffffff;
   height: 100%;
 }
+
 .logo {
   width: 190px;
   height: 51.83px;
   margin-left: 40px;
 }
+
 .header__nav {
   display: flex;
   flex-direction: row;
@@ -25,6 +28,7 @@
   column-gap: 39px;
   padding: 0 55px;
 }
+
 .header__nav-link {
   font-family: "PT Sans", sans-serif, serif;
   font-style: normal;
@@ -34,11 +38,13 @@
   text-decoration: none;
   color: #6f7682;
 }
+
 .header__nav-person {
   width: 30px;
   height: 30px;
   margin-left: 275px;
 }
+
 .header__nav-login {
   font-family: "PT Sans", sans-serif, serif;
   font-style: normal;
@@ -57,6 +63,7 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
 .header__dropdown {
   width: 31px;
   height: 31px;
@@ -64,10 +71,12 @@
   margin-top: 222px;
   margin-left: -1340px;
 }
+
 .header__menu {
   margin-top: 222px;
   margin-left: 35px;
 }
+
 .header__menu-link {
   font-family: "PT Sans", sans-serif, serif;
   font-style: normal;
@@ -78,6 +87,7 @@
   text-decoration: none;
   color: #4798de;
 }
+
 .header__search-form {
   border: 1px solid #979595;
   display: inline-flex;
@@ -89,6 +99,7 @@
   align-items: center;
   overflow: hidden;
 }
+
 .header__search-form-txt {
   font-family: "PT Sans", sans-serif, serif;
   font-style: normal;
@@ -99,6 +110,7 @@
   width: 390px;
   outline: none;
 }
+
 .header__search-form-btn {
   display: flex;
   align-items: center;
@@ -110,6 +122,7 @@
   margin: 0 0 0 10px;
   background: #4798de;
 }
+
 .header__search-form-phone {
   display: flex;
   flex-direction: column;
@@ -118,6 +131,7 @@
   margin-top: 222px;
   margin-left: 30px;
 }
+
 .header__phone {
   font-family: "PT Sans", sans-serif, serif;
   font-style: normal;
@@ -130,6 +144,7 @@
   padding-bottom: 5px;
   color: #6f7682;
 }
+
 .header__phone-txt {
   font-family: "PT Sans", sans-serif, serif;
   font-style: normal;
@@ -141,6 +156,7 @@
   /* Green */
   color: #6cdb7e;
 }
+
 .header__icon {
   display: flex;
   flex-direction: row;
@@ -150,6 +166,7 @@
   margin-top: 230px;
   margin-left: 120px;
 }
+
 .header__icon-favourites,
 .header__icon-comparison,
 .header__icon-basket {
@@ -160,18 +177,22 @@
   text-align: center;
   margin-left: 40px;
 }
+
 .header__icon-favourites-img {
   width: 25px;
   height: 30px;
 }
+
 .header__icon-comparison-img {
   width: 30px;
   height: 30px;
 }
+
 .header__icon-basket-img {
   width: 30px;
   height: 30px;
 }
+
 .header__icon-favourites-txt {
   width: 64px;
   height: 11px;
@@ -182,6 +203,7 @@
   line-height: 17px;
   color: #4798de;
 }
+
 .header__icon-comparison-txt {
   width: 62px;
   height: 11px;
@@ -192,6 +214,7 @@
   line-height: 17px;
   color: #4798de;
 }
+
 .header__icon-basket-txt {
   width: 48px;
   height: 11px;
@@ -515,4 +538,165 @@
 .footer__content-subscription_text {
   text-align: left;
   width: 70%;
+}
+
+@media screen and (max-width: 767px) {
+  .main__baner_info_button {
+    background-color: #4798de;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    border-color: rgba(71, 152, 222, 1);
+    width: 100px;
+    height: 20px;
+    margin: 5px;
+  }
+
+  .main__baner_info_text {
+    color: rgba(111, 118, 130, 1);
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  .main__baner_info_text-discount {
+    color: rgba(108, 219, 126, 1);
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  .footer__content {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    grid-template-areas:
+      "logo logo"
+      "icon contacts"
+      "card  contacts"
+      "customer company "
+      "subscription subscription";
+    grid-template-columns: 40% 57%;
+    grid-template-rows: repeat(5, max-fitt);
+    justify-self: stretch;
+    font-size: 13px;
+  }
+
+  .footer__content_icon-social_link-vk,
+  .footer__content_icon-social_link-instagram,
+  .footer__content_icon-social_link-facebook {
+    padding: 2px;
+    width: 25px;
+    height: 24px;
+  }
+
+  .footer__content-customer_nav-link,
+  .footer__content-company_nav-link,
+  .footer__content-contacts_nav-link {
+    padding: 2%;
+    font-weight: normal;
+    text-decoration: none;
+    color: rgba(111, 118, 130, 1);
+    width: 100%;
+  }
+
+  .footer__content_card_MasterCard {
+    padding: 2px;
+    width: 29px;
+    height: 24px;
+  }
+
+  .footer__content_card_MIR {
+    padding: 2px;
+    width: 29px;
+    height: 24px;
+  }
+
+  .footer__content_card_VISA {
+    padding: 2px;
+    width: 25px;
+    height: 24px;
+  }
+
+  .footer__content_logo_image {
+    margin: 5px;
+    max-height: 51.82975769042969px;
+    max-width: 150px;
+    left: 20px;
+    border-radius: 0px;
+  }
+
+  .footer__content_icon-social {
+    margin: 2%;
+    padding-left: 2%;
+    height: 50px;
+  }
+
+  .footer__content_card {
+    margin: 2%;
+    padding-left: 2%;
+    height: 50px;
+  }
+
+  .main-conteiner {
+    font-size: 13px;
+  }
+
+  .footer__content-subscription_form {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .footer__content-subscription_input {
+    border: 0px;
+    padding: 0px;
+    width: 60%;
+    height: 40px;
+  }
+
+  .footer__content-subscription_button {
+    border: 0px;
+    padding: 0px;
+    background-color: #4798de;
+    color: rgba(255, 255, 255, 1);
+    width: 35%;
+    height: 40px;
+    margin: 0%;
+  }
+}
+
+@media screen and (min-width:768px)and(max-width:1023px) {
+  .footer__content {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    grid-template-areas:
+      "logo customer company contacts"
+      "icon customer company contacts"
+      "card customer company contacts"
+      "subscription subscription";
+
+    grid-template-columns: repeat(4, max-fitt);
+    grid-template-rows: repeat(4, max-fitt);
+  }
+
+  .footer__content_logo_image {
+    margin: 17px;
+    grid-area: logo;
+    max-height: 51.82975769042969px;
+    max-width: 190px;
+    left: 20px;
+    border-radius: 0px;
+  }
+
+  .main-conteiner {
+    font-size: 13px;
+  }
 }
